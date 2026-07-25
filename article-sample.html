@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- ページのタブに表示されるタイトルです。記事タイトルに書き換えてください -->
+<title>(記事タイトル)</title>
+<style>
+  :root {
+    --bg: #e8ede6;
+    --panel: #f7f4ec;
+    --border: #c7d3cd;
+    --accent: #146c48;
+    --accent-dim: #1f8a63;
+    --text: #1c2a26;
+    --text-dim: #4b5b56;
+    --mono: "JetBrains Mono", "Courier New", monospace;
+    --serif: "Hiragino Mincho ProN", "Yu Mincho", serif;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    min-height: 100vh;
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--serif);
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 32px 16px;
+  }
+
+  .article {
+    width: 100%;
+    max-width: 680px;
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 40px 36px;
+    box-shadow: 0 0 0 1px #000, 0 20px 60px rgba(0,0,0,0.15);
+  }
+
+  .back-link {
+    display: inline-block;
+    font-family: var(--mono);
+    font-size: 14px;
+    color: var(--accent-dim);
+    text-decoration: none;
+    margin-bottom: 28px;
+  }
+
+  .back-link:hover { text-decoration: underline; }
+
+  .article-date {
+    font-family: var(--mono);
+    font-size: 14px;
+    color: var(--text-dim);
+    margin-bottom: 10px;
+  }
+
+  h1 {
+    font-size: 28px;
+    line-height: 1.5;
+    margin: 0 0 30px 0;
+    color: var(--accent);
+    font-weight: 700;
+  }
+
+  .body-text {
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.02em;
+  }
+
+  .body-text p {
+    margin: 0 0 24px 0;
+  }
+
+  .body-text h2 {
+    font-size: 21px;
+    color: var(--accent);
+    margin: 40px 0 18px 0;
+    font-weight: 700;
+    border-bottom: 2px solid var(--border);
+    padding-bottom: 8px;
+  }
+
+  .footer-note {
+    margin-top: 44px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+    font-family: var(--mono);
+    font-size: 12px;
+    color: var(--text-dim);
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+
+<div class="article">
+
+  <!-- トップページに戻るリンクです。そのままで大丈夫です -->
+  <a class="back-link" href="index.html">&larr; 一覧にもどる</a>
+
+  <!-- 記事の日付です。書き換えてください -->
+  <div class="article-date">2026.07.25</div>
+
+  <!-- 記事タイトルです。書き換えてください -->
+  <h1>(ここに記事のタイトルを入れてください)</h1>
+
+  <div class="body-text">
+
+    <!--
+      ここから本文です。
+      1つの段落ごとに <p> ~ </p> でかこんでください。
+      見出しを入れたいときは <h2>見出し</h2> を使ってください。
+
+      例:
+      <p>ここに1つ目の段落の文章を書きます。</p>
+      <h2>小見出し</h2>
+      <p>ここに続きの段落の文章を書きます。</p>
+    -->
+
+    <p>(ここに本文を入れてください。NOTEの記事の文章をそのまま貼り付けて、段落ごとに &lt;p&gt; と &lt;/p&gt; で挟んでください。)</p>
+
+  </div>
+
+  <div class="footer-note">この記事はブログに移植したものです</div>
+
+</div>
+
+</body>
+</html>
